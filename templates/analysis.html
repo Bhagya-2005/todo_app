@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis</title>
+</head>
+<body>
+    <h1>Data Science Analysis</h1>
+    <p>Average Time Spent per Task: {{ average_time }} minutes</p>
+    <p>Task Completion Rate: {{ completion_rate }}%</p>
+    <h3>Task Time Distribution:</h3>
+    <img src="{{ url_for('static', filename='plot.png') }}" alt="Task Time Plot">
+</body>
+</html>
